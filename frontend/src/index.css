@@ -1,0 +1,13 @@
+/* green button */
+.btn-green {
+    background-color: #009245;
+    color: white;
+    border: none;
+    width: 25%;
+    transition: 0.3s ease;
+  }
+  
+  .btn-green:hover {
+    background-color: #007a39; /* a bit darker for hover */
+  }
+  
