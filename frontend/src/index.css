@@ -5,10 +5,11 @@
     border: none;
     width: 100%;
     max-width: 200px;
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
   }
   
   .btn-green:hover {
+    color:whitesmoke;
     background-color: #007a39; /* a bit darker for hover */
   }
   

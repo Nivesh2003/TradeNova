@@ -22,15 +22,24 @@ function Stats() {
           <h2 data-aos="fade-up">The TradeNova ecosystem</h2>
           <h4 data-aos="fade-up" className='text-muted'>More than a trading platform</h4>
           <p  className="mb-5 text-muted" data-aos="fade-up">We provide a complete ecosystem with insights, analytics, and tools that adapt to your trading style.</p>
-
-          <h2 data-aos="fade-up">Maximize your investments</h2>
-          <h4 data-aos="fade-up" className='text-muted'>Smart tools for smarter trades</h4>
-          <p className="mb-5 text-muted" data-aos="fade-up">Features like advanced analytics, alerts, and portfolio insights help you make the most of your money.</p>
         </div>
         <div className="col-6 p-3">
           <img data-aos="fade-up" src="images/ecosystem.png" alt="" className='img-fluid mt-3'/>
         </div>
       </div>
+
+      {/* Educate starts */}
+      <div className="row p-5" style={{marginTop:'-50px'}}>
+        <div className="col-md-5">
+          <img src="/images/book.png" className="img-fluid" alt="book" data-aos='fade-up'/>
+        </div>
+        <div className="col-md-7 mt-4 p-5">
+          <h1 className='fs-2 mb-3 mt-5' data-aos="fade-up">Unlock the Secrets of the Stock Market!</h1>
+          <p data-aos="fade-up">Dive into the world of stocks with our easy-to-follow guide! Whether you're a beginner or looking to sharpen your skills, this guide gives you the knowledge to trade smarter and invest wiser.</p>
+          <a data-aos="fade-up" href="" style={{color:"#009245"}} className="nav-link">Explore more <i className='fa fa-long-arrow-right'></i></a>
+        </div>
+      </div>
+      {/* Educate ends */}
     </div>
   )
 }
