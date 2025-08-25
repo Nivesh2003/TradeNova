@@ -3,11 +3,21 @@
     background-color: #009245;
     color: white;
     border: none;
-    width: 25%;
+    width: 100%;
+    max-width: 200px;
     transition: 0.3s ease;
   }
   
   .btn-green:hover {
     background-color: #007a39; /* a bit darker for hover */
+  }
+  
+  /* Hero section */
+  .hero-img {
+    max-height: 440px; /* adjust as needed */
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
   }
   
