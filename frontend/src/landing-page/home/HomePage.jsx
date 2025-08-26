@@ -8,11 +8,9 @@ import Footer from '../Footer'
 function HomePage() {
   return (
     <>
-    <Navbar/>
     <Hero />
     <Stats/>
     <OpenAccount/>
-    <Footer/>
     </>
   )
 }

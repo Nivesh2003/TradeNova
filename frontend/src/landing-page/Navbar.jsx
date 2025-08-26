@@ -1,15 +1,16 @@
 import React from 'react'
 import '../index.css';
+import { Link } from 'react-router-dom';
 function Navbar() {
   return (
 <nav className="navbar navbar-expand-lg p-0 border-bottom" style={{backgroundColor:'white'}}>
   <div className="container">  
-    <a className="navbar-brand" href="#">
+    <Link className="navbar-brand" to="/">
       <img 
         src="/images/logoTN.svg" 
         alt="" 
       />
-    </a>
+    </Link>
     <button 
       className="navbar-toggler" 
       type="button" 
@@ -24,11 +25,10 @@ function Navbar() {
 
     <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
       <ul className="navbar-nav mb-2 mb-lg-0">
-        <li className="nav-item"><a className="nav-link active" href="#">About</a></li>
-        <li className="nav-item"><a className="nav-link active" href="#">Product</a></li>
-        <li className="nav-item"><a className="nav-link active" href="#">Pricing</a></li>
-        <li className="nav-item"><a className="nav-link active" href="#">Support</a></li>
-        <li className="nav-item"><a className="nav-link active" href="#">Signup</a></li>
+        <li className="nav-item"><Link to='/about' className="nav-link active">About</Link></li>
+        <li className="nav-item"><Link className="nav-link active" to='/notfound'>Product</Link></li>
+        <li className="nav-item"><Link className="nav-link active" to="/support">Support</Link></li>
+        <li className="nav-item"><Link className="nav-link active" to='/signup'>Signup</Link></li>
       </ul>
     </div>
   </div>
