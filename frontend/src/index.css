@@ -21,4 +21,21 @@
     margin: 0 auto;
     display: block;
   }
-  
+   
+
+  /* Navbar start */
+
+
+
+.navbar-brand img {
+  height: 100px !important; /* reduce logo size */
+  width: auto !important;
+  min-width: 150px !important;
+  margin-top: -10px;
+}
+.nav-link{
+  margin-top: -10px;
+}
+
+
+  /* Navbar ends */

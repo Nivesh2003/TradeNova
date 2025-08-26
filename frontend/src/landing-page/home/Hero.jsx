@@ -9,11 +9,11 @@ function Hero() {
   }, []);
 
   return (
-    <div className="container p-5">
+    <div className="container p-5" style={{marginTop:'-30px'}}>
       {/* Hero section */}
       <div className="row text-center">
         <img data-aos="fade-up" src="/images/homeHero.png" alt="hero-image" className='hero-img mb-4'/>
-        <h1 data-aos="fade-up" className='mt-4'>Ready to Nova-fy Your Trades?</h1>
+        <h1 data-aos="fade-up" className='mt-2' style={{fontWeight:'400'}}>Ready to Nova-fy Your Trades?</h1>
         <p data-aos="fade-up">Experience a platform designed for modern traders.</p>
         <button data-aos="fade-up" className="btn btn-sm btn-green fs-5 rounded p-2 mx-auto">Create an account</button>
       </div> 
