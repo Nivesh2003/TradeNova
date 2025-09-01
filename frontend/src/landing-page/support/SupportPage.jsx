@@ -1,13 +1,25 @@
 import React from 'react'
-
+import '../../index.css'
 function SupportPage() {
   return (
     <>
       <div className="container">
 
         {/* Hero starts */}
-        <div className="row p-5 mt-5 mb-5">
-
+        <div className="container-fluid" id='supportHero'>
+        <div className="p-5 mt-5" id="supportWrapper">
+          <h3>Support portal</h3>
+          <a href="">Track requests</a>
+        </div>
+        <div className="row mb-5">
+            <div className="col-6 p-5 mb-5">
+              <h3>Search for a query</h3>
+              <input placeholder='E.g Account opening , Transactions' />
+            </div>
+            <div className="col-6 p-5 mb-5">
+              <h3>Featured</h3>
+            </div>
+          </div>
         </div>
         {/* Hero ends */}
 

@@ -112,4 +112,24 @@
   }
   
 
-  /* About page ends */
+  /* About page ends */ 
+  
+  /* Support page starts */
+  #supportHero{
+    background-color: #009245;
+    color: white;
+  }
+  #supportHero a{
+    color: white;
+  }
+  #supportWrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  #supportHero input{
+    padding : 9px 50px;
+    border-radius: 20px;
+    width:100%;
+    border:none;
+  }
+  /* Support page ends */
