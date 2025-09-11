@@ -281,13 +281,13 @@ code {
 }
 
 .menu {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   color: rgb(70, 70, 70);
 }
 
 .menu.selected {
-  color: rgb(245, 104, 52);
+  color: #009245;
 }
 
 hr {
@@ -327,7 +327,7 @@ hr {
 /* sudo selectors */
 
 .menu:hover {
-  color: rgb(245, 104, 52);
+  color: #009245;
 }
 
 .profile:hover {
@@ -336,7 +336,7 @@ hr {
 
 .profile:hover .username {
   cursor: pointer;
-  color: rgb(223, 91, 43);
+  color: #009245;
 }
 
 .orders {
