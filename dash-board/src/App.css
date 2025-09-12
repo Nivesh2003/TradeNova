@@ -618,7 +618,7 @@ hr {
 .index-points {
   font-size: 0.8rem;
   font-weight: 500;
-  color: rgb(223, 73, 73);
+  color: rgb(87, 21, 210);
 }
 
 .percent {
@@ -637,10 +637,13 @@ hr {
   height: 100%;
   box-sizing: border-box;
   box-shadow: 0px 0px 4px 1px rgb(236, 235, 235);
-  overflow-y: auto;
+  overflow-y: scroll;
   position: relative;
 }
-
+/* Chrome, Edge, Safari  Hide the scroll bar*/ 
+.watchlist-container::-webkit-scrollbar {
+  display: none;
+}
 .search-container {
   display: flex;
   align-items: center;
