@@ -11,15 +11,25 @@ const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
 
-  const handleBuyClick = () => {
-    axios.post("http://localhost:5000/newOrder", {
-      name: uid,
-      qty: stockQuantity,
-      price: stockPrice,
-      mode: "BUY",
-    });
+  const handleBuyClick = async () => {
+    try {
+      const res = await axios.post("http://localhost:5000/newOrder", {
+        name: uid,
+        qty: stockQuantity,
+        price: stockPrice,
+        mode: "BUY",
+      });
 
-    GeneralContext.closeBuyWindow();
+      if (res.data === "Order received") {
+        GeneralContext.closeBuyWindow();
+        window.alert("Order placed successfully");
+      } else {
+        window.alert("Error placing order");
+      }
+    } catch (error) {
+      console.error("Error placing order:", error);
+      window.alert("Error placing order");
+    }
   };
 
   const handleCancelClick = () => {
